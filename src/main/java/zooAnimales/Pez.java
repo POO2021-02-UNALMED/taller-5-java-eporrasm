@@ -20,11 +20,15 @@ public class Pez extends Animal {
 	public static int cantidadPeces(){
 		return listado.size();
 	}
-	public Pez crearSalmon(String nombre, int edad, String genero) {
+	public static Pez crearSalmon(String nombre, int edad, String genero) {
 		salmones++;
 		return new Pez(nombre, edad, "oceano", genero, "rojo", 6);
 	}
-	public Pez crearBacalao(String nombre, int edad, String genero) {
+	@Override
+	public String movimiento() {
+		return "nadar";
+	}
+	public static Pez crearBacalao(String nombre, int edad, String genero) {
 		bacalaos++;
 		return new Pez(nombre, edad, "oceano", genero, "gris", 6);
 	}

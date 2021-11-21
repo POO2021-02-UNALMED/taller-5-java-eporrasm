@@ -20,11 +20,15 @@ public class Reptil extends Animal {
 	public static int cantidadReptiles(){
 		return listado.size();
 	}
-	public Reptil crearIguana(String nombre, int edad, String genero) {
+	public static Reptil crearIguana(String nombre, int edad, String genero) {
 		iguanas++;
 		return new Reptil(nombre, edad, "humedal", genero, "verde", 3);
 	}
-	public Reptil crearSerpiente(String nombre, int edad, String genero) {
+	@Override
+	public String movimiento() {
+		return "reptar";
+	}
+	public static Reptil crearSerpiente(String nombre, int edad, String genero) {
 		serpientes++;
 		return new Reptil(nombre, edad, "jungla", genero, "blanco", 1);
 	}

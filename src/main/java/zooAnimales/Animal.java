@@ -27,6 +27,9 @@ public class Animal {
 		return "Mi nombre es "+nombre+", tengo una edad de "+edad+", habito en "+habitat+" y mi genero es "+genero+
 				", la zona en la que me ubico es "+zona+" en el "+zona.getZoologico();
 	}
+	public String movimiento() {
+		return "desplazarse";
+	}	
 	public void setZona(Zona zona) {
 		this.zona = zona;
 	}
