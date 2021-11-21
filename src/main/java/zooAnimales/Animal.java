@@ -20,12 +20,20 @@ public class Animal {
 		;
 	}
 	public static String totalPorTipo(){
-		return "Mamiferos: "+Mamifero.cantidadMamiferos()+"\n"+"Aves: "+Ave.cantidadAves()+"\n"+"Reptiles: "+Reptil.cantidadReptiles()+"\n"
-				+"Peces: "+Pez.cantidadPeces()+"\n"+"Anfibios: "+Anfibio.cantidadAnfibios()+"\n";
+		return "Mamiferos: "+Mamifero.cantidadMamiferos()+"\n"
+				+"Aves: "+Ave.cantidadAves()+"\n"
+				+"Reptiles: "+Reptil.cantidadReptiles()+"\n"
+				+"Peces: "+Pez.cantidadPeces()+"\n"
+				+"Anfibios: "+Anfibio.cantidadAnfibios()+"\n";
 	}
 	public String toString() {
-		return "Mi nombre es "+nombre+", tengo una edad de "+edad+", habito en "+habitat+" y mi genero es "+genero+
-				", la zona en la que me ubico es "+zona+" en el "+zona.getZoologico();
+		if (zona == null) {
+			return "Mi nombre es "+nombre+", tengo una edad de "+edad+", habito en "+habitat+" y mi genero es "+genero;
+		}
+		else {
+			return "Mi nombre es "+nombre+", tengo una edad de "+edad+", habito en "+habitat+" y mi genero es "+genero+
+					", la zona en la que me ubico es "+zona+" en el "+zona.getZoologico();
+		}
 	}
 	public String movimiento() {
 		return "desplazarse";
