@@ -30,4 +30,16 @@ public class Zona {
 	public int cantidadAnimales() {
 		return animales.size();
 	}
+	public Zoologico getZoo() {
+		return zoo;
+	}
+	public void setZoo(Zoologico zoo) {
+		this.zoo = zoo;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	public void setAnimales(List<Animal> animales) {
+		this.animales = animales;
+	}
 }

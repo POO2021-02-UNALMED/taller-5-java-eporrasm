@@ -28,5 +28,23 @@ public class Anfibio extends Animal {
 		salamandras++;
 		return new Anfibio(nombre, edad, "selva", genero, "negro y amarillo", false);
 	}
+	public static List<Anfibio> getListado() {
+		return listado;
+	}
+	public static void setListado(List<Anfibio> listado) {
+		Anfibio.listado = listado;
+	}
+	public String getColorPiel() {
+		return colorPiel;
+	}
+	public void setColorPiel(String colorPiel) {
+		this.colorPiel = colorPiel;
+	}
+	public boolean isVenenoso() {
+		return venenoso;
+	}
+	public void setVenenoso(boolean venenoso) {
+		this.venenoso = venenoso;
+	}
 	
 }

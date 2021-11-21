@@ -28,5 +28,23 @@ public class Reptil extends Animal {
 		serpientes++;
 		return new Reptil(nombre, edad, "jungla", genero, "blanco", 1);
 	}
+	public static List<Reptil> getListado() {
+		return listado;
+	}
+	public static void setListado(List<Reptil> listado) {
+		Reptil.listado = listado;
+	}
+	public String getColorEscamas() {
+		return colorEscamas;
+	}
+	public void setColorEscamas(String colorEscamas) {
+		this.colorEscamas = colorEscamas;
+	}
+	public int getLargoCola() {
+		return largoCola;
+	}
+	public void setLargoCola(int largoCola) {
+		this.largoCola = largoCola;
+	}
 	
 }
